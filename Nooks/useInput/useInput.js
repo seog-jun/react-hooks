@@ -10,5 +10,5 @@ export const useInput = (initialValue, validator) => {
       setValue(val);
     }
   };
-  return { value, onChange };
+  return { props: { value, onChange }, utils: { setValue } };
 };
