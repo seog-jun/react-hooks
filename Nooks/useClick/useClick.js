@@ -12,6 +12,6 @@ export const useClick = (onClick) => {
         element.current.removeEventListener("click", onClick);
       }
     };
-  }, []);
+  });
   return typeof onClick !== "function" ? undefined : element;
 };
