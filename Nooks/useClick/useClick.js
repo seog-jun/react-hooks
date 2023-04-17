@@ -3,7 +3,6 @@ import { useEffect, useRef } from "react";
 export const useClick = (onClick) => {
   const element = useRef();
   useEffect(() => {
-    console.log(element);
     if (element.current) {
       element.current.addEventListener("click", onClick);
     }
